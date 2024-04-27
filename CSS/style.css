@@ -1,561 +1,564 @@
 :root {
-    --main-color : #00204a;
-    --blue-color : #00bbf0 ;
+  --main-color: #00204a;
+  --blue-color: #00bbf0;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 /* Start Home */
 main {
-    background: url(../image/hero-bg.png);
-    background-size: cover;
-    background-position: bottom;
-    height: 100vh;
+  background: url(../image/hero-bg.png);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
 }
 main header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header h1 a{
-    color: white;
-    margin-left: 10px;
+header h1 a {
+  color: white;
+  margin-left: 10px;
 }
 header ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 header li a {
-    margin-right: 20px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    transition: 0.5s;
-    color: white;
+  margin-right: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: white;
 }
-header li a:hover, .Active {
-    color: var(--blue-color);
+header li a:hover,
+.Active {
+  color: var(--blue-color);
 }
-header li  i {
-    color: white;
-    font-size: 20px;
+header li i {
+  color: white;
+  font-size: 20px;
 }
 header nav > i {
-    color: white;
-    display: none !important;
-    margin-right: 20px;
+  color: white;
+  display: none !important;
+  margin-right: 20px;
 }
 @media (max-width: 991px) {
-    header nav > i {
-        display: block !important;
-    }
-    header nav ul {
-        flex-direction: column;
-        position: absolute !important;
-        left: 50% !important;
-        transform: translateX(-50%);
-        opacity: 0 !important;
-        transition: 0.5s;
-        display: none;
-        background-color: white;
-        width:70%  !important;
-        align-items: center;
-        justify-content: space-around;
-        height: 400px;
-        z-index: 9;
-    }
-    header:hover ul {
-        opacity: 1 !important;
-        display: flex;
-    }
-    header nav ul li a {
-        padding: 10px;
-       color: black !important;
-        border-radius: 5px;
-    }
-    header nav ul li a:hover {
-        color: white !important;
-        background-color: var(--blue-color);
-    }
+  header nav > i {
+    display: block !important;
+  }
+  header nav ul {
+    flex-direction: column;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    opacity: 0 !important;
+    transition: 0.5s;
+    display: none;
+    background-color: white;
+    width: 70% !important;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    z-index: 9;
+  }
+  header:hover ul {
+    opacity: 1 !important;
+    display: flex;
+  }
+  header nav ul li a {
+    padding: 10px;
+    color: black !important;
+    border-radius: 5px;
+  }
+  header nav ul li a:hover {
+    color: white !important;
+    background-color: var(--blue-color);
+  }
 }
 .landing img {
-    max-width: 100%;
-    animation: up-down 3s infinite ease;
+  max-width: 100%;
+  animation: up-down 3s infinite ease;
 }
 @keyframes up-down {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-50px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
 }
 .landing p {
-    color: white;
-    line-height: 1.6;
+  color: white;
+  line-height: 1.6;
 }
 .landing h1 {
-    font-size: 52px;
-    color: white;
+  font-size: 52px;
+  color: white;
 }
 .landing {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 .landing a {
-    padding: 15px 25px;
-    position: relative;
-    color: white;
-    border: 1px solid var(--blue-color);
-    z-index: 3;
-    display: block;
-    width: fit-content;
-    margin: auto;
-    border-radius: 30px;
+  padding: 15px 25px;
+  position: relative;
+  color: white;
+  border: 1px solid var(--blue-color);
+  z-index: 3;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  border-radius: 30px;
 }
 .landing a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.5s;
-    width: 0;
-    height: 101%;
-    background-color: var(--blue-color);
-    z-index: -1;
-    border-radius: 40px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+  width: 0;
+  height: 101%;
+  background-color: var(--blue-color);
+  z-index: -1;
+  border-radius: 40px;
 }
 .landing a:hover::after {
-    width: 100%;
+  width: 100%;
 }
-@media (max-width:564px) {
-    .landing h1 {
-        font-size: 32px;
-    }
+@media (max-width: 564px) {
+  .landing h1 {
+    font-size: 32px;
+  }
 }
 /* End Home */
 /* Start Service */
 .service {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .service .head {
-    text-align: center;
+  text-align: center;
 }
 .service .head h2 {
-    font-size: 48px;
-    color: black;
-    margin-bottom: 3px;
+  font-size: 48px;
+  color: black;
+  margin-bottom: 3px;
 }
 .service .head h2 span {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .service .head p {
-    color: black;
-    margin-top: 0;
-    margin-bottom: 30px;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 @media (max-width: 767px) {
-    .service .head h2 {
-        font-size: 35px;
-    }
-    .service  {
-        padding-top: 50px !important;
-    }
-    .landing img {
-       max-width: 100% !important;
-    }
+  .service .head h2 {
+    font-size: 35px;
+  }
+  .service {
+    padding-top: 50px !important;
+  }
+  .landing img {
+    max-width: 100% !important;
+  }
 }
 @media (max-width: 991px) {
-    .service  {
-        padding-top: 100px !important;
-    }
-    .landing img {
-        width: 400px;
-    }
+  .service {
+    padding-top: 100px !important;
+  }
+  .landing img {
+    width: 400px;
+  }
 }
 .service-content img {
-    max-width: 30%;
-    transition: 1.4s;
+  max-width: 30%;
+  transition: 1.4s;
 }
 .service-content .box {
-    transition: 1.5s;
-    background-color: #f8f8f9;
-    position: relative;
-    overflow: hidden;
-    z-index: 4;
-    margin: auto;
+  transition: 1.5s;
+  background-color: #f8f8f9;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+  margin: auto;
 }
 .service-content .box:hover::after {
-    right: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
 }
 .change::after {
-    background-color: #00bbf0 !important;
+  background-color: #00bbf0 !important;
 }
 .service-content .box::after {
-    content: "";
-    position: absolute;
-    right: -60px;
-    bottom: -80px;
-    z-index: -1;
-    width: 200px;
-    height: 200px;
-    background: var(--main-color);
-    border-radius: 50%;
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  right: -60px;
+  bottom: -80px;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  background: var(--main-color);
+  border-radius: 50%;
+  transition: 0.3s;
 }
 .service-content .box:hover img {
-    transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 .service-content .box:hover h2 {
-    color: white;
+  color: white;
 }
 .service-content .box:hover p {
-    color: white;
+  color: white;
 }
 .service-content {
-    text-align: center;
+  text-align: center;
 }
-.service-content .box a{
-    color: black;
+.service-content .box a {
+  color: black;
 }
-.service-content .box a:hover{
-    color: white;
+.service-content .box a:hover {
+  color: white;
 }
 .link a {
-    padding: 15px 25px;
-    width: fit-content;
-    margin: auto;
-    color: black;
-    position: relative;
-    display: block;
-    margin-top: 30px;
-    border: 1px solid var(--blue-color);
-    transition: 0.6s;
-    border-radius: 7px;
+  padding: 15px 25px;
+  width: fit-content;
+  margin: auto;
+  color: black;
+  position: relative;
+  display: block;
+  margin-top: 30px;
+  border: 1px solid var(--blue-color);
+  transition: 0.6s;
+  border-radius: 7px;
 }
 .link a:hover {
-    color: white;
+  color: white;
 }
 .link a:hover::after {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .link a:hover::before {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .link a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    z-index: -1;
-    background: var(--blue-color);
-    transition: 0.6s ;
-    border-radius: 6px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  background: var(--blue-color);
+  transition: 0.6s;
+  border-radius: 6px;
 }
 .link a::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    z-index: -1;
-    background: var(--blue-color);
-    transition: 0.6s ;
-    border-radius: 6px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  background: var(--blue-color);
+  transition: 0.6s;
+  border-radius: 6px;
 }
 @media (max-width: 767px) {
-    .service-content img {
-        max-width: 40%;
-    }
+  .service-content img {
+    max-width: 40%;
+  }
 }
 @media (max-width: 767px) {
-    .service-content .box {
-        margin-top: 30px;
-    }
+  .service-content .box {
+    margin-top: 30px;
+  }
 }
 /* End Service */
 /* Start About */
 .about {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: var(--main-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--main-color);
 }
 .about .head {
-    text-align: center;
+  text-align: center;
 }
 .about .head h2 {
-    font-size: 48px;
-    color: white;
-    margin-bottom: 3px;
+  font-size: 48px;
+  color: white;
+  margin-bottom: 3px;
 }
 .about .head h2 span {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .about .head p {
-    color: white;
-    margin-top: 0;
+  color: white;
+  margin-top: 0;
 }
 .about-content img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .about-content h2 {
-    color: white;
-    font-size: 32px;
+  color: white;
+  font-size: 32px;
 }
 .about-content p {
-    color: white;
-    line-height: 1.6;
+  color: white;
+  line-height: 1.6;
 }
-.about-content a{
-    padding: 15px 25px;
-    position: relative;
-    z-index: 1;
-    display: block;
-    border: 1px solid var(--blue-color);
-    width: fit-content;
-    color: white;
-    border-radius: 15px;
+.about-content a {
+  padding: 15px 25px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  border: 1px solid var(--blue-color);
+  width: fit-content;
+  color: white;
+  border-radius: 15px;
 }
 .about-content a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 102%;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.7s;
-    z-index: -1;
-    background-color: var(--blue-color);
-    border-radius: 12px;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 102%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.7s;
+  z-index: -1;
+  background-color: var(--blue-color);
+  border-radius: 12px;
 }
 .about-content a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 /* End About */
 /* Start Why */
 .why {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .why .head h1 {
-    font-size: 42px;
-    color: black;
-    text-align: center;
+  font-size: 42px;
+  color: black;
+  text-align: center;
 }
 .why .head span {
-color: var(--blue-color);
+  color: var(--blue-color);
 }
 .why-content {
-    text-align: center;
+  text-align: center;
 }
 .why-content img {
-    max-width: 60%;
+  max-width: 60%;
 }
 .why-content p {
-    color: black;
-    line-height: 1.6;
+  color: black;
+  line-height: 1.6;
 }
 .why-content h2 {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .why-content .img {
-    border: 3px solid var(--main-color);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  border: 3px solid var(--main-color);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .why a {
-    padding: 15px 25px;
-    color: black;
-    width: fit-content; 
-    margin: auto;
-    display: block;
-    position: relative;
-    z-index: 3;
-    border: 1px solid var(--blue-color);
+  padding: 15px 25px;
+  color: black;
+  width: fit-content;
+  margin: auto;
+  display: block;
+  position: relative;
+  z-index: 3;
+  border: 1px solid var(--blue-color);
 }
 .why a:hover {
-    color: white;
+  color: white;
 }
 .why a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 102%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 0;
-    background-color: var(--blue-color);
-    z-index: -1;
-    transition: 0.5s;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 102%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+  background-color: var(--blue-color);
+  z-index: -1;
+  transition: 0.5s;
 }
 .why a:hover::after {
-    height: 100%;
+  height: 100%;
 }
 /* End Why */
 /* Start Team */
 .team {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: var(--main-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--main-color);
 }
 .team .head h1 {
-    font-size: 42px;
-    color: white;
-    text-align: center;
+  font-size: 42px;
+  color: white;
+  text-align: center;
 }
 .team .head span {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .team-content .img img {
-    max-width: 60%;
-    border-radius: 50%;
-    border: 5px solid white
+  max-width: 60%;
+  border-radius: 50%;
+  border: 5px solid white;
 }
 .team-content .card {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 .team-content .card h2 {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .team-content .card p {
-    font-size: 24px;
+  font-size: 24px;
 }
 .team-content .icons i {
-    padding: 10px;
-    font-size: 24px;
-    transition: 0.3s;
+  padding: 10px;
+  font-size: 24px;
+  transition: 0.3s;
 }
 .team-content .icons i:hover {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 /* End Team */
 /* Start Customer */
 .customer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .customer .head h1 {
-    font-size: 42px;
-    color: black;
-    text-align: center;
+  font-size: 42px;
+  color: black;
+  text-align: center;
 }
 .customer .head h1 span {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 @media (max-width: 767px) {
-     .head h1 {
-        font-size: 32px !important;
-    }
+  .head h1 {
+    font-size: 32px !important;
+  }
 }
 .customer-content img {
-    border-radius: 50%;
-    max-width: 100%;
-    position: absolute;
-    top: -54px;
-    left: 0;
+  border-radius: 50%;
+  max-width: 100%;
+  position: absolute;
+  top: -54px;
+  left: 0;
 }
 .customer-content .box {
-    box-shadow: 2px -1px 10px 0px #999;
-    position: relative;
-    padding: 20px;
-    margin-top: 50px;
-    transition: 0.3s;
+  box-shadow: 2px -1px 10px 0px #999;
+  position: relative;
+  padding: 20px;
+  margin-top: 50px;
+  transition: 0.3s;
 }
 .customer-content .box:hover {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 .customer-content .box:hover p {
-    color: white;
+  color: white;
 }
 .customer-content .box i {
-    position: absolute;
-    right: 30px;
-    font-size: 24px;
+  position: absolute;
+  right: 30px;
+  font-size: 24px;
 }
 .customer-content .box h4 {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 .customer-content .box p {
-    margin-top: 0;
+  margin-top: 0;
 }
 /* End Customer */
 /* Start Footer */
 footer {
-    padding-top: 50px;
-    background-color: var(--main-color);
-    color: white;
-    padding-bottom: 20px;
+  padding-top: 50px;
+  background-color: var(--main-color);
+  color: white;
+  padding-bottom: 20px;
 }
 .footer-content .box h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 .footer-content .box i {
-    padding: 10px;
-    transition: 0.6s;
-    font-size: 20px;
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 20px;
 }
 .footer-content .box i:hover {
-    color: var(--blue-color);
-    background-color: white;
-    border-radius: 50%;
+  color: var(--blue-color);
+  background-color: white;
+  border-radius: 50%;
 }
 .footer-content ul li a {
-    color: white;
-    transition: 0.3s;
-    display: block;
-    margin: 20px
+  color: white;
+  transition: 0.3s;
+  display: block;
+  margin: 20px;
 }
 .footer-content ul li a:hover {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 .footer-content form input[type="email"] {
-    border: none;
-    outline: none;
-    background: transparent;
-    border-bottom: 2px solid white;
-    transition: 0.5s;
-    padding: 10px;
-    display: block;
-    margin: 30px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  transition: 0.5s;
+  padding: 10px;
+  display: block;
+  margin: 30px 0;
 }
 .footer-content form input[type="email"]::placeholder {
-    transition: 0.5s;
-    font-size: 20px;
-    color: white;
+  transition: 0.5s;
+  font-size: 20px;
+  color: white;
 }
 .footer-content form input[type="email"]:hover::placeholder {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 .footer-content form a {
-    padding: 15px 25px;
-    background-color: var(--blue-color);
-    color: white;
+  padding: 15px 25px;
+  background-color: var(--blue-color);
+  color: white;
 }
